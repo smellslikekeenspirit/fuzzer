@@ -10,8 +10,9 @@ browser = mechanicalsoup.StatefulBrowser()
 url = args.url
 
 if args.command == "discover" and args.custom_auth == "dvwa":
-    # on localhost, the url needs to be followed by custom-auth i.e. "{url}/{custom-auth}/setup.php", "{url}/{custom-auth}/security.php" etc
-    # please inject the argument if needed i.e. browser.open("{url}/{custom-auth)/setup.php".format(url=url, custom_auth=args.custom_auth))
+    """ on localhost, if the url argument is simply localhost, it needs to be followed by custom-auth
+        i.e. "{url}/{custom-auth}/setup.php", "{url}/{custom-auth}/security.php" etc
+        please inject the argument if needed i.e. browser.open("{url}/{custom-auth)/setup.php".format(url=url, custom_auth=args.custom_auth))"""
     browser.open("{url}/setup.php".format(url=url))
     browser.select_form('form[action="#"]')
     browser.submit_selected()

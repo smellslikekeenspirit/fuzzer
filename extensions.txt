@@ -1,0 +1,9 @@
+.asp
+.htm
+.html
+.js
+.jsp
+.jspx
+.php
+.php3
+.php4

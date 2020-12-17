@@ -19,5 +19,5 @@ account
 signin
 new
 news
-stories
+timeout
 contact

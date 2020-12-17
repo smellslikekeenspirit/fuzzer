@@ -21,4 +21,4 @@ fuzzrunner:
     - pip3 install mechanicalsoup
     - python3 fuzz.py --command=discover --url=http://localhost/ --custom-auth=dvwa
     - python3 fuzz.py --command=discover --url=http://127.0.0.1/fuzzer-tests
-  stage: test
+  stage: test:wq

@@ -1,0 +1,6 @@
+MySQL
+mysql
+syntax
+integer
+float
+string
